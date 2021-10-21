@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="author" content="Richard Liu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta name="description" content="FIT3179 Vega-Lite Assignment" />
+    <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <title>The Road to Happiness | Richard Liu</title>
+  </head>
+  <body>
+    <h1>Is money the key to happiness?</h1>
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+          <p>
+            The journey towards our self actualisation is a journey that we all
+            must travel and discover by ourselves, but we're not all fortunate enough to come from the same beginnings.
+          </p>
+          <br>
+          <br>
+        <div id="countries-visualisation"></div>
+      </div>
+    </div>
+
+    <h2>Movin' on Up</h2>
+    <div class="column-list">
+        <p1>
+            <img src="https://flagpedia.net/data/flags/w160/ie.png">
+            <br>
+            <strong style="color: green;">&uarr; 7.085 Republic of Ireland</strong>
+            <br>
+            A beacon of stability in the British Isles, Ireland managed to navigate the Covid-19 crisis and political turmoil more effectively than its neighbour across the sea. Crisis looms large as the question of Northern Ireland (currently under British control) remains unsolved and Irish and British paramilitaries prepare for a possible hard border.
+        </p1>
+        <p1>
+            <img src="https://flagpedia.net/data/flags/w160/cn.png">
+            <br>
+            <strong style="color: green;">&uarr; 5.339 People's Republic of China</strong>
+            <br>
+            While still far below the top nations in ranking happiness, the PRC managed to climb up the rankings as both strict Covid-19 protocols and other nations remained stagnant, or more likely dropped rankings. As the country lacks adequate press and political freedoms, it is difficult to gauge the exact mood of its citizens towards the ruling Communist Party.
+        </p1>
+        <p1>
+            <img src="https://flagpedia.net/data/flags/w160/nz.png">
+            <br>
+            <strong style="color: green;">&uarr; 7.277 New Zealand</strong>
+            <br>
+            One of a very small handful of nations in the West that eliminated Covid-19 for much of the last two years, leading the incumbent Labour Party to a crushing majority in New Zealand's 2020 general election, a rarity in the nations proportional voting system. With Covid cases climbing in Auckland, its largest city and lockdown fatigue setting in, it remains to be seen whether Delta can be eliminated.
+        </p1>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h2>Falling Behind</h2>
+    <div class="column-list">
+        <p1>
+            <img src="https://flagpedia.net/data/flags/w160/mm.png">
+            <br>
+            <strong style="color: red;">&darr; 4.426 Republic of the Union of Myanmar</strong>
+            <br>
+            It's weak democracy overthrown in a military coup after the pro-military faction lost in an election has led to a low intensity civil war. Guerillas have set up base areas in Myanmar's vast interior and trade unions continue to carry out major work stoppages, while regular people have little hope for the future.
+        </p1>
+        <p1>
+            <img src="https://flagpedia.net/data/flags/w160/ye.png">
+            <br>
+            <strong style="color: red;">&darr; 3.658 Republic of Yemen</strong>
+            <br>
+            Beset on all sides by crisis, Yemen remains engulfed in devastating civil war as Covid spreads unchecked through refugeee camps. With accusations of ethnic cleansing and genocide being perpetuated by Saudi Arabia, the situation looks grim for the civilian population already facing a new wave of devastating famine.
+        </p1>
+        <p1>
+            <img src="https://flagpedia.net/data/flags/w160/br.png">
+            <br>
+            <strong style="color: red;">&darr; 6.33 Federative Republic of Brazil</strong>
+            <br>
+            Brazil's far-right, proto-fascist President destroyed any public credibility he once had as Covid wrought havoc and morgues were overfilled with bodies while he continued making press appearences denying the severity of the virus, before being hospitalised himself. The country looks set for political violence as Bolsonaro looks bent on sabotaging the upcoming electionse.
+      </p1>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-3">
+        <h2>And the poor suffer what they must?</h2>
+        <p>
+            Yvan Eht Nioj
+        </p>
+        <p>
+            I hate sand, it's coarse, it's irritating, and it gets everywhere!
+        </p>
+      </div>
+      <div class="pure-u-2-3">
+        <div id="regions-visualisation"></div>
+      </div>
+    </div>
+    <div class="pure-g">
+      <div class="pure-u-1-1" style="text-align: center">
+        <h2>Alright Hold onto your hats cos I have no clue what I'm doing.</h2>
+        <p>
+            The rocky pool is nice and cool.
+        </p>
+        <div id="scatterplot-visualisation"></div>
+      </div>
+    </div>
+
+    <a href="https://www.kaggle.com/ajaypalsinghlo/world-happiness-report-2021" target="_blank">Data Source: Kaggle World Happiness Report 2021</a>
+    <p>Visualisation created by Richard Liu for FIT3179 &copy;2021</p>
+    <p>This content is licensed under a GNU GPLv3 license.</p>
+
+    <script type="text/javascript">
+      var spec = "vis/countries-happiness.json";
+      vegaEmbed("#countries-visualisation", spec, { actions: false })
+        .then(function (result) {})
+        .catch(console.error);
+    </script>
+
+    <script type="text/javascript">
+      var spec = "vis/happiness-by-geographical-region.json";
+      vegaEmbed("#regions-visualisation", spec, { actions: false })
+        .then(function (result) {})
+        .catch(console.error);
+    </script>
+
+    <script type="text/javascript">
+      var spec = "";
+      vegaEmbed("#scatterplot-visualisation", spec, { actions: false })
+        .then(function (result) {})
+        .catch(console.error);
+    </script>
+
+    <script type="text/javascript">
+        var spec = "";
+        vegaEmbed("#anotherone", spec, { actions: false })
+        .then(function (result) {})
+        .catch(console.error);
+    </script>
+  </body>
+</html>

@@ -1,16 +1,59 @@
 /* My Custom CSS */
 * {
     font-family: Roboto, sans-serif;
-    background-color: ivory;
+    /* background-color: lightyellow; */
     line-height: 25px;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* border: 1px solid black; */
 }
+
+/* body {
+
+} */
+
 h1 {
+    text-align: center;
     font-weight: bold;
-    font-size: 48px
+    font-size: 48px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 h2 {
+    text-align: center;
     font-weight: normal;
-    font-size: 32px
+    font-size: 32px;
 }
+
+img {
+    border: 1px solid black;
+}
+
+.body-bg {
+    background-color: white;
+}
+
+.column-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+p1 {
+    width: 30%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.pure-g {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+.pure-u-1-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
