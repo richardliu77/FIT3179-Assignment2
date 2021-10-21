@@ -1,16 +1,11 @@
-/* My Custom CSS */
+/* My Custom CSS 
+! NEXT LINE STYLES EVERYTHING */
 * {
     font-family: Roboto, sans-serif;
-    /* background-color: lightyellow; */
     line-height: 25px;
     margin-left: 5%;
     margin-right: 5%;
-    /* border: 1px solid black; */
 }
-
-/* body {
-
-} */
 
 h1 {
     text-align: center;
@@ -26,11 +21,7 @@ h2 {
 }
 
 img {
-    border: 1px solid black;
-}
-
-.body-bg {
-    background-color: white;
+    border: 2px solid black;
 }
 
 .column-list {
@@ -50,10 +41,3 @@ p1 {
     justify-content: center;
     align-items: center;
 }
-
-/* 
-.pure-u-1-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */

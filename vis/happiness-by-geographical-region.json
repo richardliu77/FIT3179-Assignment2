@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
-    "height": 370,
-    "title": "Average Happiness Score of each Region",
+    "height": 400,
+    "width": 900,
+    "title": "Mean Happiness per Region",
     "data": {
       "url": "https://raw.githubusercontent.com/richardliu77/FIT3179-Assignment2/master/datasets/world-happiness-report-2021.csv"
     },
@@ -34,8 +34,8 @@
           "dx": 40
         },
         "encoding": {
-        "color": {"value": "black"},
-          "text": {"field": "avg_score", "type": "quantitative", "format": ".3f"}
+            "text": {"field": "avg_score", "type": "quantitative", "format": ".3f"},
+            "color": {"value": "black"}
         }
       }
     ]
